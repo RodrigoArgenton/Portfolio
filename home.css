@@ -1,14 +1,30 @@
 :root{
-  --primeira_cor: black; 
+  --primeira_cor: black;
+  --segunda_cor: white;
+  --terceira_cor: gray;
 }
 body{
   background-color: var(--primeira_cor);
+  color: var(--segunda_cor);
 }
 .perfilImg{
   border-radius: 100%;
+  max-width: 200px;
+  max-height: 200px;
 }
-.apresentacao{
+.stacks{
+  background-color: var(--terceira_cor);
+  border-radius: 50px;
+  text-align: center;
+}
+.apresentacaoImg{
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
+}
+.apresentacaoTexto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
