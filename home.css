@@ -1,20 +1,25 @@
 :root{
-  --primeira_cor: black;
+  --primeira_cor: rgb(34, 34, 34);
   --segunda_cor: white;
   --terceira_cor: gray;
+  --quarta_cor: #B2FF59;
+  --quinta_cor: #00C853;
 }
 body{
   background-color: var(--primeira_cor);
   color: var(--segunda_cor);
+  font-family: 'Times New Roman', Times, serif;
+
 }
 .perfilImg{
-  border-radius: 100%;
   max-width: 200px;
   max-height: 200px;
+  border-radius: 50rem;
+  background: linear-gradient(to right, var(--quarta_cor), var(--quinta_cor));
+  padding: 5px;
+  
 }
 .stacks{
-  background-color: var(--terceira_cor);
-  border-radius: 50px;
   text-align: center;
 }
 .apresentacaoImg{
@@ -25,6 +30,53 @@ body{
 .apresentacaoTexto{
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
+}
+.mainHome{
+  padding-top: 20px;
+}
+.subTexto{
+  color: var(--terceira_cor);
+}
+.experiencias{
+  padding-top: 20px;
+  max-width: 600px;
+  margin-left: 115px;
+}
+.linguagens{
+  margin-left: 103px;
+}
+.barraProgresso{
+  height: 32px;
+  width: 250px;
+  border-radius: 50rem;
+  background: linear-gradient(to right, var(--quarta_cor), var(--quinta_cor));
+  border: 1px solid var(--terceira_cor);
+
+}
+.barraBasico{
+  background-size: 25% 100%;
+  background-repeat: no-repeat;
+}
+.text25{
+  width: 25%;
+  height: 100%;
+  text-align: center;
+}
+.barraIntermediario{
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+}
+.text50{
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+.custom-grid [class^='col-'] {
+  flex: 0 0 6.25%; 
+  max-width: 6.25%; 
+  flex-grow: 0;
+}
+.contentLinguagens{
+  padding-bottom: 20px;
 }
