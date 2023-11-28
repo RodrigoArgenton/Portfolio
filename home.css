@@ -1,0 +1,14 @@
+:root{
+  --primeira_cor: black; 
+}
+body{
+  background-color: var(--primeira_cor);
+}
+.perfilImg{
+  border-radius: 100%;
+}
+.apresentacao{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
