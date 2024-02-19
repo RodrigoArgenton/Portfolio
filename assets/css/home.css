@@ -1,4 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+:root{
+    --primary-color: black;
+    --second-color: gray;
+}
 *{
     padding: 0;
     margin: 0;
+    text-decoration: none;
+    color: var(--primary-color);
+    list-style: none;
+    font-family: "Kode Mono", Arial, Helvetica, sans-serif;
+}
+/* header */
+header{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--second-color);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.name {
+    font-size: 1.5rem;
+    display: inline;
+    width: 35%;
+    padding-left: 1rem;
+}
+.navBar{
+    width: 65%;
+}
+.navBar li{
+    display: inline;
+    padding: 1rem;
+}
+.navBar ul{
+    text-align: end;
+    
 }
