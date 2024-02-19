@@ -15,23 +15,27 @@
 header{
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     background-color: var(--second-color);
     text-transform: uppercase;
     font-weight: 700;
 }
 .name {
     font-size: 1.5rem;
-    display: inline;
+    display: flex;
     width: 35%;
     padding-left: 1rem;
+    align-items: center;
+}
+.name img{
+    max-width: 50px;
 }
 .navBar{
     width: 65%;
 }
 .navBar li{
     display: inline;
-    padding: 1rem;
+    padding: 0 1rem 0 1rem;
 }
 .navBar ul{
     text-align: end;
