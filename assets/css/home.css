@@ -3,6 +3,7 @@
     --primeira-cor: white;
     --segunda-cor: gray;
     --terceira-cor: black;
+    --quarta-cor: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1));
 }
 *{
     padding: 0;
@@ -43,7 +44,7 @@ header{
 /* main */
 /* home */
 
-.home{
+#home{
     text-align: center;
     margin: auto;
     background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1));
@@ -53,28 +54,21 @@ header{
     flex-direction: column;
     justify-content: center;
 }
-.home h1{
+#home h1{
     font-size: 4rem;
+    text-transform: uppercase;
 }
-.home article{
+#home article{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.home p{
+#home p{
     padding: 10px 50px 0;
-    max-width: 600px;
-}
-.home .button {
-    margin-top: 50px;
-}
-.home .button a{
-    border: 1px solid var(--terceira-cor);
-    padding: 1rem 3rem;
-    font-size: 1.5rem;
+    max-width: 750px;
 }
 /* sobre */
-.sobre{
+#sobre{
     display: flex;
     padding: 0 15%;
     gap: 40px;
@@ -83,12 +77,41 @@ header{
     width: 50%;
     text-align: center;
 }
+.historia p{
+    text-align: justify;
+}
 .skills{
     width: 50%;
     text-align: center;
 }
-
+.skills article{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.skills span{
+    background-image: var(--quarta-cor);
+    padding: 20px;
+    font-size: 1.5rem;
+    color: var(--segunda-cor);
+    border-radius: 10%;
+}
 /* outros */
 section{
     padding: 60px 0;
+}
+h2{
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+p{
+    font-size: 1.5rem;
+}
+.button {
+    margin-top: 50px;
+}
+.button a{
+    border: 1px solid var(--terceira-cor);
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
 }
