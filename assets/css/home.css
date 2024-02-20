@@ -46,7 +46,6 @@ header{
 .home{
     text-align: center;
     margin: auto;
-    padding: 100px 20px;
     background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1));
     background-size: contain;
     height: 500px;
@@ -73,4 +72,23 @@ header{
     border: 1px solid var(--terceira-cor);
     padding: 1rem 3rem;
     font-size: 1.5rem;
+}
+/* sobre */
+.sobre{
+    display: flex;
+    padding: 0 15%;
+    gap: 40px;
+}
+.historia{
+    width: 50%;
+    text-align: center;
+}
+.skills{
+    width: 50%;
+    text-align: center;
+}
+
+/* outros */
+section{
+    padding: 60px 0;
 }
