@@ -96,6 +96,34 @@ header{
     color: var(--segunda-cor);
     border-radius: 10%;
 }
+/* Projetos */
+#projetos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+#projetos article{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 70%;
+}
+#projetos > article:last-child{
+    margin-top: 20px;
+}
+#projetos div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#projetos div p{
+    text-align: justify;
+}
+#projetos img{
+    max-width: 500px;
+    border: 2px solid var(--terceira-cor);
+}
 /* outros */
 section{
     padding: 60px 0;
