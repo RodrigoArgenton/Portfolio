@@ -55,7 +55,7 @@ header{
     justify-content: center;
 }
 #home h1{
-    font-size: 4rem;
+    font-size: 3.3rem;
     text-transform: uppercase;
 }
 #home article{
@@ -64,7 +64,7 @@ header{
     align-items: center;
 }
 #home p{
-    padding: 10px 50px 0;
+    padding: 10px 50px 50px;
     max-width: 750px;
 }
 /* sobre */
@@ -79,6 +79,9 @@ header{
 }
 .historia p{
     text-align: justify;
+}
+.historia .button{
+    margin-top: 50px;
 }
 .skills{
     width: 50%;
@@ -106,19 +109,15 @@ header{
 #projetos article{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 80px;
     max-width: 70%;
-}
-#projetos > article:last-child{
-    margin-top: 20px;
+    padding: 20px;
 }
 #projetos div{
     display: flex;
     flex-direction: column;
-    gap: 10px;
-}
-#projetos div p{
-    text-align: justify;
+    text-align: left;
+    gap: 30px;
 }
 #projetos img{
     max-width: 500px;
@@ -129,17 +128,18 @@ section{
     padding: 60px 0;
 }
 h2{
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 30px;
 }
-p{
+h3{
     font-size: 1.5rem;
 }
-.button {
-    margin-top: 50px;
+p{
+    font-size: 1rem;
 }
 .button a{
     border: 1px solid var(--terceira-cor);
     padding: 1rem 3rem;
     font-size: 1.5rem;
+    max-width: fit-content;
 }
