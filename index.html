@@ -121,14 +121,28 @@
     <section id="contato">
       <h2>Contato</h2>
       <p>Sinta-se à vontade para entrar em contato comigo enviando o formulário abaixo e entrarei em contato com você o mais breve possível</p>
-      <article>
+      <article class="form-contato">
+        <div class="contato-img">
+          <img src="/assets/images/undraw_undraw_sign_up_ln1s_-1-_ofs1.svg" alt="imagem ilustrativa sobre envio de informações">
+        </div>
         <form action="" method="post">
-          <label for="nome">Nome</label>
-          <input type="text" name="nome" id="nome">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email">
-          <label for="mensagem">Mensagem</label>
-          <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+          <div>
+            <div>
+              <label for="nome">Nome</label>
+              <input type="text" name="nome" id="nome" placeholder="Digite o seu nome completo" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="Digite o seu email" required>
+            </div>
+            <div>
+              <label for="mensagem">Mensagem</label>
+              <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Descreva sobre o assunto desejado" required></textarea>
+            </div>
+          </div>
+          <div class="button">
+            <a href="#contato">Contato</a>
+          </div>
         </form>
       </article>
     </section>

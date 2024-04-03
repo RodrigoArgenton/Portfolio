@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
 :root{
     --primeira-cor: white;
-    --segunda-cor: gray;
+    --segunda-cor: rgb(187, 187, 187);
     --terceira-cor: black;
     --quarta-cor: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1));
 }
@@ -12,6 +12,10 @@
     color: var(--terceira-cor);
     list-style: none;
     font-family: "Kode Mono", Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
 }
 /* header */
 header{
@@ -43,7 +47,6 @@ header{
 }
 /* main */
 /* home */
-
 #home{
     text-align: center;
     margin: auto;
@@ -123,6 +126,42 @@ header{
     max-width: 500px;
     border: 2px solid var(--terceira-cor);
 }
+/* contato */
+#contato{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--segunda-cor);
+}
+#contato article{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+.contato-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primeira-cor);
+    padding: 1rem;
+}
+.contato-img img{
+    width: 31rem;
+}
+.form-contato form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primeira-cor);
+    padding: 3rem;
+}
 /* outros */
 section{
     padding: 60px 0;
@@ -142,4 +181,5 @@ p{
     padding: 1rem 3rem;
     font-size: 1.5rem;
     max-width: fit-content;
+    border-radius: 20px;
 }
